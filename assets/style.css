@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body {
+   
+    background: #081b29;
+    color: #ededed;
+}
+
+.head {
+    
+    height: 100px;
+    
+}
+
+.main-container {
+    display: flex;
+
+}
+
+.left-container {
+    background-color: #081b29;
+    width: 50%;
+}
+.right-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    /* background-color:#00abf0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+.home {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding:0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 20px;
+
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    margin-top: 20px;
+}
+.home-content p {
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover {
+     color: #081b29;
+}
+.btn-box a:nth-child(2)::before {
+    background: #00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s ;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#00abf0;
+    z-index: -1;
+    transition: .5s;
+    
+}
+
+.home-sci a:hover:before {
+    width: 100%;
+}
+
+.right-container a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px; 
+    height: 70px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 20px;
+    font-size: 40px;
+    color:black;
+    background-color: aliceblue;
+    text-decoration: none;
+    
+}
+
+@keyframes moveOfHTML {
+    from{ transform: translateY(0px);}
+    to {transform: translateY(60px);}
+}
+
+@keyframes moveOfCSS {
+    from{ transform: translateY(0px);}
+    to {transform: translateY(-60px);}
+}
+
+@keyframes moveOfTW {
+    from{ transform: translateY(0px);}
+    to {transform: translateY(60px);}
+}
+
+@keyframes moveOfJS {
+    from{ transform: translateY(0px);}
+    to {transform: translateY(-60px);}
+}
+
+@keyframes moveOfVJS {
+    from{ transform: translateY(0px);}
+    to {transform: translateY(60px);}
+}
+
+@keyframes moveOfFIG {
+    from{ transform: translateY(0px);}
+    to {transform: translateY(-60px);}
+}
+
+.right-container a:nth-child(1) {
+    transition: all 1s ease-in-out;
+    animation-name: moveOfHTML;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.right-container a:nth-child(2) {
+    transition: all 1s ease-in-out;
+    animation-name: moveOfCSS;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.right-container a:nth-child(3) {
+    transition: all 1s ease-in-out;
+    animation-name: moveOfTW;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.right-container a:nth-child(4) {
+    transition: all 1s ease-in-out;
+    animation-name: moveOfJS;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.right-container a:nth-child(5) {
+    transition: all 1s ease-in-out;
+    animation-name: moveOfVJS;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.right-container a:nth-child(6) {
+    transition: all 1s ease-in-out;
+    animation-name: moveOfFIG;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+    
+
