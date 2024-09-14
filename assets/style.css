@@ -293,4 +293,16 @@ body {
     animation-direction: alternate;
 }
     
+@media all and (max-width:767px) {
+     .head  {
+       justify-content: flex-start;
+    }
 
+    .main-container {
+        flex-direction: column;
+     }
+
+     .home-sci{
+        bottom: -200px; 
+     }
+}
